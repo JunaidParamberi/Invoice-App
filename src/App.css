@@ -1,0 +1,314 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+ 
+}
+
+
+
+.invoice-container .invoice {
+  width: 595px;
+  height:842px ;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  padding: 30px 20px;
+  margin: 30px 20px ;
+}
+
+.invoice-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(225, 225, 225);
+  color: black;
+
+  
+ 
+
+}
+
+.invoice-details{
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-component{
+  margin-bottom: 30px;
+}
+
+.header-component img{
+  width: 100px;
+ 
+}
+
+.dates{
+  background-color:rgba(53, 151, 243, 0.15) ;
+  padding: 10px 20px ;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 6px;
+
+}
+
+.other-bill-to-details{
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.other-bill-to-details .bill-to-other{
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+
+}
+
+/* .invoice-number,.refference-num{
+  display: flex;
+  flex-direction: column;
+} */
+
+.invoice-numbers{
+  display: flex;
+  gap: 100px;
+  margin-left: 20px;
+  align-items: center;
+}
+
+.body-head ul{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  padding: 10px 10px ;
+  background-color:rgba(53, 151, 243, 0.15) ;
+  padding: 10px 20px ;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.sevice-details ul{
+  padding: 10px 10px ;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+}
+
+
+.sevice-details ul :nth-child(1){
+  max-width: 200px;
+  min-width: 200px;
+}
+
+
+.sevice-details ul :nth-child(2){
+  margin-left: -80px;
+}
+
+.sevice-details ul::after{
+  content: "";
+  width: 97%;
+  height: 1px;
+  background-color: rgba(128, 128, 128, 0.249);
+  position: absolute;
+  bottom: 0;
+}
+
+.total-amout-container{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.rounded-tr-xl{
+  border-radius: 20px;
+  background-color:rgba(53, 151, 243, 0.15) ;
+  padding: 10px 10px ;
+}
+
+
+.subtotal ul{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px ;
+  position: relative;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.subtotal ul::after{
+
+  content: "";
+  width: 93%;
+  height: 1px;
+  background-color: rgba(128, 128, 128, 0.249);
+  position: absolute;
+  bottom: 0;
+}
+
+.total-part .total-due{
+  display: flex;
+  justify-content: space-between;
+  margin-left: -10px;
+  margin-top: 10px;
+  margin-bottom: -10px;
+  padding: 10px 15px ;
+  align-items: center;
+}
+
+
+.amount-inwords {
+  text-align: right;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+
+.footer-container{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px ;
+  
+}
+
+.footer-container::before{
+  content: "";
+  width: 36%;
+  height: 1px;
+  background-color: rgba(128, 128, 128, 0.249);
+  position: absolute;
+  bottom: 0;
+}
+
+
+/* inputs */
+
+
+.name-input{
+  border: 1px solid rgba(128, 128, 128, 0.249);
+  border-radius: 6px;
+  padding: 2px 5px;
+  max-width: 100px;
+  font-size: 12px;
+  min-width: 170px;
+  margin-bottom: 5px;
+}
+
+input::placeholder,textarea::placeholder{
+  font-size: 10px;
+}
+
+
+.address-textarea{
+  max-width: 110px;
+  border: 1px solid rgba(128, 128, 128, 0.249);
+  border-radius: 6px;
+  padding: 2px 5px;
+  max-width: 120px;
+  min-width: 200px;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.num-input{
+  border: 1px solid rgba(128, 128, 128, 0.249);
+  border-radius: 6px;
+  padding: 3px 5px;
+  max-width: 100px;
+  font-size: 12px;
+  min-width: 170px;
+  margin-bottom: 5px;
+}
+
+
+input[type= "date"]{
+  border: 1px solid rgba(128, 128, 128, 0.249);
+  border-radius: 3px;
+  padding: 1px 3px;
+  max-width: 110px;
+  font-size: 12px;
+  min-width: 110px;
+  margin-bottom: 5px;
+  background-color: transparent;
+  outline: none;
+}
+
+.ivo-num-input{
+  border: 1px solid rgba(128, 128, 128, 0.249);
+  border-radius: 3px;
+  padding: 1px 3px;
+  max-width: 70px;
+  font-size: 12px;
+  min-width: 70x;
+  margin-bottom: 5px;
+  background-color: transparent;
+  outline: none;
+}
+
+.ivo-ref-input{
+  border: 1px solid rgba(128, 128, 128, 0.249);
+  border-radius: 3px;
+  padding: 1px 3px;
+  max-width: 70px;
+  font-size: 12px;
+  min-width: 70x;
+  margin-bottom: 5px;
+  background-color: transparent;
+  outline: none;
+}
+
+.des-input{
+  border: 1px solid rgba(128, 128, 128, 0.249);
+  border-radius: 3px;
+  padding: 3px 3px;
+  max-width: 100px;
+  font-size: 12px;
+  min-width: 70x;
+  margin-bottom: 5px;
+  background-color: transparent;
+  outline: none;
+  margin-right: 10px;
+}
+
+.qty-input{
+  border: 1px solid rgba(128, 128, 128, 0.249);
+  border-radius: 3px;
+  padding: 3px 3px;
+  max-width: 40px;
+  font-size: 12px;
+  
+  margin-bottom: 5px;
+  background-color: transparent;
+  outline: none;
+}
+
+.rate-input{
+  border: 1px solid rgba(128, 128, 128, 0.249);
+  border-radius: 3px;
+  padding: 3px 3px;
+  max-width: 70px;
+  font-size: 12px;
+  
+  margin-bottom: 5px;
+  background-color: transparent;
+  outline: none;
+}
+
+.add-row{
+  background-color: rgba(53, 151, 243, 1);
+  margin-top: 10px;
+  width: 100px;
+  font-size: 12px;
+  padding: 5px 5px;
+  margin-left: 10px;
+  color: white;
+  border-radius: 6px;
+
+}
+
+
+
