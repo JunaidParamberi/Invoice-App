@@ -18,10 +18,16 @@ jobs:
         uses: actions/setup-node@v3
 
       - name: Install dependencies
-        uses: bahmutov/npm-install@v1
+        run: npm install
 
       - name: Build project
         run: npm run build
+
+      - name: Install Tailwind CSS
+        run: npm install -D tailwindcss postcss autoprefixer
+
+      - name: Generate Tailwind CSS
+        run: npx tailwindcss build -o ./dist/css/tailwind.css
 
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v3
